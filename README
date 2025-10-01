@@ -1,0 +1,120 @@
+# 🎮 PickerApp - Finger Tap Chooser
+
+**PickerApp** es una aplicación móvil multiplataforma (iOS y Android) desarrollada con **React Native**, **Expo**, **TypeScript** y **Tailwind (NativeWind)**.  
+El objetivo es proporcionar un set de mini-juegos rápidos y divertidos para grupos, usando **toques de dedos en la pantalla** como input principal.  
+
+La app está optimizada para funcionar en teléfonos y tablets, con un diseño modular y escalable.
+
+Esta es mi primera aplicación mobile. Sigo aprendiendo y estoy abierto a comentarios.
+
+---
+
+## 🚀 Tecnologías principales
+
+- [Expo](https://expo.dev/) con **Expo Router**  
+- [React Native](https://reactnative.dev/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [NativeWind (TailwindCSS)](https://www.nativewind.dev/)  
+- [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) para animaciones fluidas  
+- [Expo APIs](https://docs.expo.dev/versions/latest/) (Haptics, KeepAwake, etc.)
+
+---
+
+## 📂 Estructura del proyecto
+
+```bash
+picker-finger-tap-chooser/
+├── app/                  # Navegación con expo-router
+│   ├── index.tsx         # Menú principal
+│   ├── (games)/          # Juegos
+│   │   ├── starter.tsx
+│   │   ├── order.tsx
+│   │   └── teams.tsx
+│   └── _layout.tsx       # Layout global
+├── components/           # Componentes reutilizables
+│   ├── game/
+│   ├── layout/
+│   └── ui/
+├── hooks/                # Hooks personalizados
+├── lib/                # Helper functions
+├── app.json    # Expo config for build 
+├── tailwind.config.js    # Configuración de Tailwind
+├── tsconfig.json
+├── package.json
+└── README.md
+
+---
+
+## 🕹️ Modos de juego
+
+### 1. Pick Starter
+
+Los jugadores ponen los dedos en la pantalla.
+
+Cada dedo se representa con un avatar circular.
+
+Al detectar 2 o más dedos, comienza una cuenta regresiva de 5s.
+
+Se selecciona un dedo al azar como ganador de la ronda.
+
+Se muestra una animación con el ganador y un botón para reiniciar o volver al menú.
+
+### 2. Pick Order
+
+Los jugadores ponen los dedos en la pantalla.
+
+Al menos 2 dedos son necesarios para comenzar.
+
+Tras la cuenta regresiva de 5s, cada dedo recibe un orden aleatorio único (1, 2, 3, …).
+
+Se despliega una animación mostrando el orden asignado.
+
+Botones disponibles: Reiniciar o Volver al menú.
+
+### 3. Pick Teams
+
+El jugador define el número de equipos (mínimo 2, máximo 30).
+
+Los participantes colocan sus dedos en la pantalla.
+
+Se requiere al menos número de equipos + 1 dedos para iniciar.
+
+Una animación tipo ruleta asigna a cada dedo un equipo (con colores distintos).
+
+Se muestran los colores finales por equipo.
+
+Botones disponibles: Reiniciar o Volver al menú.
+
+---
+
+## 📲 Instalación y ejecución
+
+1. Clonar el repositorio
+git clone https://github.com/mcruzo/PICKERAPP.git
+cd picker-finger-tap-chooser
+
+2. Instalar dependencias
+npm install
+
+3. Iniciar la app
+npm run start
+
+
+Escanea el QR con la app Expo Go
+ o corre en emulador:
+
+Android: npm run android
+
+---
+
+##👨‍💻 Scripts disponibles
+
+npm run start → Inicia el servidor de desarrollo.
+
+npm run android → Ejecuta en dispositivo/emulador Android.
+
+---
+
+## ✨ Autor
+### DevMoy
+Desarrollado con ❤️ en React Native + Expo.
