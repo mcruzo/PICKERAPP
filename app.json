@@ -1,29 +1,42 @@
 {
   "expo": {
-    "name": "picker-app",
-    "slug": "picker-app",
+    "name": "picker-finger-tap-chooser",
+    "description": "pickerfingertapchooser app is an app to help gamers to choose the starter player, the order of the players or the teams of the players of a game, or something.",
+    "slug": "picker-finger-tap-chooser",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "scheme": "picker-finger-tap-chooser",
+    "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.pickerfingertapchooser",
+      "splash": {
+        "image": "./assets/icon.png"
+      }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "bundler": "metro",
+      "favicon": "./assets/favicon.ico"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "08e96251-281e-40c0-80fb-31d060f1fa91"
+      }
+    },
+    "owner": "devmoy"
   }
 }
