@@ -29,7 +29,7 @@ export default function Home() {
                         isVisible={showTipStarter}
                         content={
                             <View>
-                                <Text>Touch the screen. Pick Starter will point to the choosen one.</Text>
+                                <Text>Toquen la pantalla. Cada jugador con un dedo, mínimo dos. Pick Starter comenzará un conteo y al llegar a 0 elegira uno.</Text>
                             </View>
                         }
                         onClose={() => setTipStarter(false)}
@@ -49,7 +49,7 @@ export default function Home() {
                         isVisible={showTipOrder}
                         content={
                             <View>
-                                <Text>Touch the screen. Pick order will enumerate whole participants.</Text>
+                                <Text>Toquen la pantalla. Cada jugador con un dedo, mínimo dos. Pick order comenzará un conteo y al llegar a 0 le asignará un orden.</Text>
                             </View>
                         }
                         onClose={() => setTipOrder(false)}
@@ -69,7 +69,7 @@ export default function Home() {
                         isVisible={showTipTeams}
                         content={
                             <View>
-                                <Text>Touch the screen. Pick teams will choose the teams randomly for you.</Text>
+                                <Text>Toquen la pantalla. Cada jugador con un dedo, mínimo 1 jugador extra al numero de equipos. Pick teams comenzará un contador, y al llegar a 0 les asignara un color por equipo. Los del mismo color son equipo.</Text>
                             </View>
                         }
                         onClose={() => setTipTeams(false)}
